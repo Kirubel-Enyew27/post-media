@@ -8,8 +8,7 @@ import { AppContext } from './AppContext'; // Import the AppContext
 
 
 export default function Profile() {
-const { userPhoto, userData, usersData, handleProfilePhotoUpload, posts } = useContext(AppContext);
-const [profilePhoto, setProfilePhoto] = useState(null);
+const { userData, usersData } = useContext(AppContext);
 const [userPost, setUserPost] = useState([]);
 const [userCount, setUserCount] = useState(0);
 const [profilePicture, setProfilePicture] = useState(null);
