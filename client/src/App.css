@@ -1,0 +1,174 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050000;
+  color: white;
+}
+
+/* Header styles */
+.profile-photo-label {
+  cursor: pointer;
+}
+
+/* User info styles */
+.user-info {
+  font-size: 25px;
+  color: #05822f;
+}
+
+/* Textarea and button styles */
+.post-container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.textarea {
+  padding: 10px 3px;
+  margin-right: 5px;
+  height: 100%;
+  max-width: 300px;
+  flex: 1;
+  background-color: whitesmoke;
+  border: 2px solid white;
+}
+
+.post-button {
+  margin-right: 3px;
+  background-color: #05822f;
+  color: white;
+  border: 1px solid white;
+}
+
+.cancel-button {
+  background-color: #820505;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Latest post styles */
+.latest-post-container {
+  border: 2px white solid;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.timestamp {
+  word-wrap: break-word;
+}
+
+.content {
+  word-wrap: break-word;
+}
+
+.edit-button {
+  color: #05822f;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-right: 5px;
+}
+
+.delete-button {
+  color: #820505;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.login-button{
+  background-color: #05822f;
+  border: 1px solid #05822f;
+  padding: 5px 10px;
+}
+
+
+.container {
+  display: block;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Add space between the logo and menu */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#ccccff;
+}
+
+/* Initial styles for the menu */
+.menu {
+  list-style-type: none;
+  margin: 10px;
+  padding: 20px 10px;
+  display: flex;
+  background-color: #820505;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li:hover{
+  background-color: #ccccff;
+  padding: 2px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styles for the mobile menu */
+.menu-btn {
+  display: none; /* Initially hide the menu button for larger screens */
+  cursor: pointer;
+  margin: 20px;
+}
+
+.menu-btn span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.user-chat{
+  display: flex;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #05822f;
+  font-size: 18px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Change to a vertical layout on small screens */
+    align-items: flex-start; /* Align items to the start of the column */
+    display: none; /* Hide the menu on small screens initially */
+  }
+
+  .menu.open {
+    display: flex; /* Show the menu when the 'open' class is applied */
+  }
+
+  .menu-btn {
+    display: block; /* Show the menu button on small screens */
+  }
+
+  .menu.open li {
+    margin-bottom: 10px; /* Adjust the value as needed */
+  }
+}
+
